@@ -1,5 +1,5 @@
-var width = 1000;
-var height = 400;
+var height = $(window).height();
+var width = $(window).width();
 
 var svg = d3.select("svg");
 
@@ -12,7 +12,7 @@ var simulation = d3.forceSimulation()
     // .force("link", d3.forceLink())//Or to use names rather than indices: .id(function(d) { return d.id; }))
     .force("link", d3.forceLink().id(function(d) { return d.id;}))
     .force("charge", d3.forceManyBody().strength([-500]).distanceMax([1000]))
-    .force("center", d3.forceCenter(width, height));
+    .force("center", d3.forceCenter(width/2, height/2));
 
 var container = svg.append('g');
 
