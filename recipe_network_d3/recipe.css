@@ -1,8 +1,14 @@
-/* .node {
+.main_svg {
+  width: 960px;
+  height: 600px;
+}
+
+.node {
     stroke: #fff;
     stroke-width: 1.5px;
 }
+
 .link {
     stroke: #999;
     stroke-opacity: .6;
-} */
+}
