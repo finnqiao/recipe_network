@@ -1,5 +1,5 @@
-var width = 960;
-var height = 600;
+var width = 1000;
+var height = 400;
 
 var svg = d3.select("svg");
 
@@ -12,7 +12,7 @@ var simulation = d3.forceSimulation()
     // .force("link", d3.forceLink())//Or to use names rather than indices: .id(function(d) { return d.id; }))
     .force("link", d3.forceLink().id(function(d) { return d.id;}))
     .force("charge", d3.forceManyBody().strength([-500]).distanceMax([1000]))
-    .force("center", d3.forceCenter(width / 2, height / 2));
+    .force("center", d3.forceCenter(width, height));
 
 var container = svg.append('g');
 
@@ -54,9 +54,6 @@ d3.json("node-link-value.json", function(error, graph) {
     .selectAll("circle")
     .data(graph.nodes)
     .enter().append("circle")
-    // Calculate degree centrality within JavaScript.
-    //.attr("r", function(d, i) { count = 0; graph.links.forEach(function(l) { if (l.source == i || l.target == i) { count += 1;}; }); return size(count);})
-    // Use degree centrality from NetworkX in json.
     .attr('r', function(d) { return degreeSize(d.recipes); })
       .attr("fill", 'rgb(46, 134, 255)')
       .attr('class', 'node')
@@ -107,18 +104,24 @@ d3.json("node-link-value.json", function(error, graph) {
         .attr("cy", function(d) { return d.y; });
   }
 
-  // A slider (using only d3 and HTML5) that removes nodes below the input threshold.
-  var slider = d3.select('body').append('p').text('Edge Weight Threshold: ');
+  // Slider for link strength filter
+
+  // Linear scale for edge IF-RIF strength
+
+  var ifrifSize = d3.scaleLinear()
+    .domain([d3.min(graph.links, function(d) {return d.log10_ifirf;}),d3.max(graph.links, function(d) {return d.log10_ifirf; })])
+    .range([1,100]);
+
+  var slider = d3.select('body').append('p').text('IF-IRF Threshold: ');
 
   slider.append('label')
   	.attr('for', 'threshold')
   	.text('1');
   slider.append('input')
   	.attr('type', 'range')
-  	.attr('min', d3.min(graph.links, function(d) {return d.edge_count; }))
-    // maybe need to rescale/remove the halving
-  	.attr('max', d3.max(graph.links, function(d) {return d.edge_count; }) / 2)
-  	.attr('value', d3.min(graph.links, function(d) {return d.edge_count; }))
+  	.attr('min', 1)
+  	.attr('max', 100)
+  	.attr('value', 1)
   	.attr('id', 'threshold')
   	.style('width', '50%')
   	.style('display', 'block')
@@ -130,7 +133,7 @@ d3.json("node-link-value.json", function(error, graph) {
   		// Find the links that are at or above the threshold.
   		var newData = [];
   		graph.links.forEach( function (d) {
-  			if (d.edge_count >= threshold) {newData.push(d); };
+  			if (ifrifSize(d.log10_ifirf) >= threshold) {newData.push(d); };
   		});
 
   		// Data join with only those new links.
@@ -150,26 +153,48 @@ d3.json("node-link-value.json", function(error, graph) {
 
   	});
 
-  // A dropdown menu with three different centrality measures, calculated in NetworkX.
-  // Acedge_count for node collision.
-  // var dropdown = d3.select('body').append('div')
-  // 	.append('select')
-  // 	.on('change', function() {
-  // 		var centrality = this.value;
-  // 		var centralitySize = d3.scaleLinear()
-  // 			.domain([d3.min(graph.nodes, function(d) { return d[centrality]; }), d3.max(graph.nodes, function(d) { return d[centrality]; })])
-  // 			.range([8,25]);
-  // 		node.attr('r', function(d) { return centralitySize(d[centrality]); } );
-  // 		// Recalculate collision detection based on selected centrality.
-  // 		simulation.force("collide", d3.forceCollide().radius( function (d) { return centralitySize(d[centrality]); }));
-  // 		simulation.alphaTarget(0.1).restart();
-  // 	});
-  //
-  // dropdown.selectAll('option')
-  // 	.data(['Degree Centrality', 'Betweenness Centrality', 'Eigenvector Centrality'])
-  // 	.enter().append('option')
-  // 	.attr('value', function(d) { return d.split(' ')[0].toLowerCase(); })
-  // 	.text(function(d) { return d; });
+    // A slider (using only d3 and HTML5) that removes nodes below the input threshold.
+    var slider = d3.select('body').append('p').text('Edge Weight Threshold: ');
+
+    slider.append('label2')
+    	.attr('for', 'threshold')
+    	.text('1');
+    slider.append('input')
+    	.attr('type', 'range')
+    	.attr('min', d3.min(graph.links, function(d) {return d.edge_count; }))
+      // maybe need to rescale/remove the halving
+    	.attr('max', d3.max(graph.links, function(d) {return d.edge_count; }) / 2)
+    	.attr('value', d3.min(graph.links, function(d) {return d.edge_count; }))
+    	.attr('id', 'threshold')
+    	.style('width', '50%')
+    	.style('display', 'block')
+    	.on('input', function () {
+    		var threshold = this.value;
+
+    		d3.select('label2').text(threshold);
+
+    		// Find the links that are at or above the threshold.
+    		var newData = [];
+    		graph.links.forEach( function (d) {
+    			if (d.edge_count >= threshold) {newData.push(d); };
+    		});
+
+    		// Data join with only those new links.
+    		link = link.data(newData, function(d) {return d.source + ', ' + d.target;});
+    		link.exit().remove();
+    		var linkEnter = link.enter().append('line').attr('class', 'link');
+    		link = linkEnter.merge(link);
+
+    		node = node.data(graph.nodes);
+
+    		// Restart simulation with new link data.
+    		simulation
+    			.nodes(graph.nodes).on('tick', ticked)
+    			.force("link").links(newData);
+
+    		simulation.alphaTarget(0.1).restart();
+
+    	});
 
   // Create form for search (see function below).
   var search = d3.select("body").append('form').attr('onsubmit', 'return false;');
