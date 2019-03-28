@@ -1,14 +1,45 @@
+html {
+  background-color: rgb(129, 129, 129);
+  padding: 0px;
+  margin: 0px;
+  border: 0px;
+  outline: none;
+}
+
 .main_svg {
   width: 100vw;
   height: 40vw;
+  background-color: rgb(129, 129, 129);
+  padding: 0px;
+  margin: 0px;
+  border: 0px;
+  outline: none;
+}
+
+form {
+  width: 200px !important;
 }
 
 .node {
-    stroke: #fff;
+    stroke: white;
     stroke-width: 1.5px;
 }
 
 .link {
-    stroke: #999;
-    stroke-opacity: .1;
+    stroke: rgb(233, 233, 233);
+    stroke-opacity: .2;
+}
+
+.ui-autocomplete {
+  list-style-type: None;
+  color: white;
+  background-color: grey;
+  width: 200px !important;
+  opacity: 0.6;
+  font-style: Montserrat;
+}
+
+.ui-menu-item {
+  padding-top:5px;
+  padding-bottom:5px;
 }

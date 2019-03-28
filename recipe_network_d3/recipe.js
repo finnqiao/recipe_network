@@ -11,23 +11,10 @@ svg.call(d3.zoom().on('zoom', zoomed));
 var simulation = d3.forceSimulation()
     // .force("link", d3.forceLink())//Or to use names rather than indices: .id(function(d) { return d.id; }))
     .force("link", d3.forceLink().id(function(d) { return d.id;}))
-    .force("charge", d3.forceManyBody().strength([-1000]).distanceMax([1600]))
+    .force("charge", d3.forceManyBody().strength([-500]).distanceMax([1000]))
     .force("center", d3.forceCenter(width / 2, height / 2));
 
 var container = svg.append('g');
-
-// Create form for search (see function below).
-var search = d3.select("body").append('form').attr('onsubmit', 'return false;');
-
-var box = search.append('input')
-	.attr('type', 'text')
-	.attr('id', 'searchTerm')
-	.attr('placeholder', 'Search for an ingredient.');
-
-var button = search.append('input')
-	.attr('type', 'button')
-	.attr('value', 'Search')
-	.on('click', function () { searchNodes(); });
 
 // Toggle for ingredient networks on click (below).
 var toggle = 0;
@@ -50,7 +37,7 @@ d3.json("node-link-value.json", function(error, graph) {
   // Linear scale for degree centrality.
   var degreeSize = d3.scaleLinear()
   	.domain([d3.min(graph.nodes, function(d) {return d.recipes;}),d3.max(graph.nodes, function(d) {return d.recipes; })])
-  	.range([5,30]);
+  	.range([10,40]);
 
   // Collision detection based on degree centrality.
   simulation.force("collide", d3.forceCollide().radius(function (d) { return degreeSize(d.recipes); }));
@@ -71,11 +58,9 @@ d3.json("node-link-value.json", function(error, graph) {
     //.attr("r", function(d, i) { count = 0; graph.links.forEach(function(l) { if (l.source == i || l.target == i) { count += 1;}; }); return size(count);})
     // Use degree centrality from NetworkX in json.
     .attr('r', function(d) { return degreeSize(d.recipes); })
-    // .attr('r', 5)
-    // Color by group, a result of modularity calculation in NetworkX.
       .attr("fill", 'rgb(46, 134, 255)')
       .attr('class', 'node')
-      // On click, toggle ego networks for the selected node.
+      // On click, toggle networks for the selected node.
       .on('click', function(d, i) {
         if (toggle == 0) {
   	      // Ternary operator restyles links and nodes if they are adjacent.
@@ -130,10 +115,10 @@ d3.json("node-link-value.json", function(error, graph) {
   	.text('1');
   slider.append('input')
   	.attr('type', 'range')
-  	.attr('min', d3.min(graph.links, function(d) {return d.counts; }))
-    // maybe need to resscale/remove the halving
-  	.attr('max', d3.max(graph.links, function(d) {return d.counts; }) / 2)
-  	.attr('value', d3.min(graph.links, function(d) {return d.counts; }))
+  	.attr('min', d3.min(graph.links, function(d) {return d.edge_count; }))
+    // maybe need to rescale/remove the halving
+  	.attr('max', d3.max(graph.links, function(d) {return d.edge_count; }) / 2)
+  	.attr('value', d3.min(graph.links, function(d) {return d.edge_count; }))
   	.attr('id', 'threshold')
   	.style('width', '50%')
   	.style('display', 'block')
@@ -145,7 +130,7 @@ d3.json("node-link-value.json", function(error, graph) {
   		// Find the links that are at or above the threshold.
   		var newData = [];
   		graph.links.forEach( function (d) {
-  			if (d.counts >= threshold) {newData.push(d); };
+  			if (d.edge_count >= threshold) {newData.push(d); };
   		});
 
   		// Data join with only those new links.
@@ -166,7 +151,7 @@ d3.json("node-link-value.json", function(error, graph) {
   	});
 
   // A dropdown menu with three different centrality measures, calculated in NetworkX.
-  // Accounts for node collision.
+  // Acedge_count for node collision.
   // var dropdown = d3.select('body').append('div')
   // 	.append('select')
   // 	.on('change', function() {
@@ -185,6 +170,32 @@ d3.json("node-link-value.json", function(error, graph) {
   // 	.enter().append('option')
   // 	.attr('value', function(d) { return d.split(' ')[0].toLowerCase(); })
   // 	.text(function(d) { return d; });
+
+  // Create form for search (see function below).
+  var search = d3.select("body").append('form').attr('onsubmit', 'return false;');
+
+  var box = search.append('input')
+    .attr('class','ui-widget')
+  	.attr('type', 'text')
+  	.attr('id', 'searchTerm')
+    // .attr('width', '400px')
+  	.attr('placeholder', 'Search for an ingredient.');
+
+  var button = search.append('input')
+  	.attr('type', 'button')
+  	.attr('value', 'Search')
+  	.on('click', function () { searchNodes(); });
+
+  var optArray = [];
+  for (var i = 0; i < graph.nodes.length - 1; i++) {
+      optArray.push(graph.nodes[i].ingred_name);
+  }
+  optArray = optArray.sort();
+  $(function () {
+      $("#searchTerm").autocomplete({
+          source: optArray
+      });
+  });
 
 });
 
@@ -210,11 +221,13 @@ function zoomed() {
   container.attr("transform", "translate(" + d3.event.transform.x + ", " + d3.event.transform.y + ") scale(" + d3.event.transform.k + ")");
 }
 
+
+
 // Search for nodes by making all unmatched nodes temporarily transparent.
 function searchNodes() {
   var term = document.getElementById('searchTerm').value;
   var selected = container.selectAll('.node').filter(function (d, i) {
-  	return d.name.toLowerCase().search(term.toLowerCase()) == -1;
+  	return d.ingred_name.toLowerCase().search(term.toLowerCase()) == -1;
   });
   selected.style('opacity', '0');
   var link = container.selectAll('.link');
