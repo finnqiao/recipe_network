@@ -11,7 +11,7 @@ svg.call(d3.zoom().on('zoom', zoomed));
 var simulation = d3.forceSimulation()
     // .force("link", d3.forceLink())//Or to use names rather than indices: .id(function(d) { return d.id; }))
     .force("link", d3.forceLink().id(function(d) { return d.id;}))
-    .force("charge", d3.forceManyBody().strength([-120]).distanceMax([500]))
+    .force("charge", d3.forceManyBody().strength([-1000]).distanceMax([1600]))
     .force("center", d3.forceCenter(width / 2, height / 2));
 
 var container = svg.append('g');
@@ -44,13 +44,13 @@ d3.json("node-link-value.json", function(error, graph) {
 
   // A function to test if two nodes are neighboring.
   function neighboring(a, b) {
-    return linkedByIndex[a.index + ',' + b.index];
+    return linkedByIndex[a.ingred_name + ',' + b.ingred_name];
   }
 
   // Linear scale for degree centrality.
   var degreeSize = d3.scaleLinear()
-  	.domain([d3.min(graph.nodes, function(d) {return d.recipes;}),d3.max(graph.nodes, function(d) {return d.degree; })])
-  	.range([8,25]);
+  	.domain([d3.min(graph.nodes, function(d) {return d.recipes;}),d3.max(graph.nodes, function(d) {return d.recipes; })])
+  	.range([5,30]);
 
   // Collision detection based on degree centrality.
   simulation.force("collide", d3.forceCollide().radius(function (d) { return degreeSize(d.recipes); }));
@@ -70,7 +70,8 @@ d3.json("node-link-value.json", function(error, graph) {
     // Calculate degree centrality within JavaScript.
     //.attr("r", function(d, i) { count = 0; graph.links.forEach(function(l) { if (l.source == i || l.target == i) { count += 1;}; }); return size(count);})
     // Use degree centrality from NetworkX in json.
-    .attr('r', function(d, i) { return degreeSize(d.recipes); })
+    .attr('r', function(d) { return degreeSize(d.recipes); })
+    // .attr('r', 5)
     // Color by group, a result of modularity calculation in NetworkX.
       .attr("fill", 'rgb(46, 134, 255)')
       .attr('class', 'node')
@@ -79,17 +80,17 @@ d3.json("node-link-value.json", function(error, graph) {
         if (toggle == 0) {
   	      // Ternary operator restyles links and nodes if they are adjacent.
   	      d3.selectAll('.link').style('stroke-opacity', function (l) {
-  		      return l.target == d || l.source == d ? 1 : 0.1;
+  		      return l.target == d || l.source == d ? 0.5 : 0.01;
   	      });
   	      d3.selectAll('.node').style('opacity', function (n) {
-  		      return neighboring(d, n) ? 1 : 0.1;
+  		      return neighboring(d, n) ? 0.5 : 0.1;
   	      });
   	      d3.select(this).style('opacity', 1);
   	      toggle = 1;
         }
         else {
   	      // Restore nodes and links to normal opacity.
-  	      d3.selectAll('.link').style('stroke-opacity', '0.6');
+  	      d3.selectAll('.link').style('stroke-opacity', '0.1');
   	      d3.selectAll('.node').style('opacity', '1');
   	      toggle = 0;
         }

@@ -1,6 +1,6 @@
 .main_svg {
-  width: 960px;
-  height: 600px;
+  width: 100vw;
+  height: 40vw;
 }
 
 .node {
@@ -10,5 +10,5 @@
 
 .link {
     stroke: #999;
-    stroke-opacity: .6;
+    stroke-opacity: .1;
 }
