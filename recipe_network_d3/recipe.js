@@ -109,7 +109,7 @@ d3.json("node-link-value.json", function(error, graph) {
   // Linear scale for edge IF-RIF strength
 
   var ifrifSize = d3.scaleLinear()
-    .domain([d3.min(graph.links, function(d) {return d.log10_ifirf;}),d3.max(graph.links, function(d) {return d.log10_ifirf; })])
+    .domain([d3.min(graph.links, function(d) {return d.loge_ifirf;}),d3.max(graph.links, function(d) {return d.loge_ifirf; })])
     .range([1,100]);
 
   var slider = d3.select('body').append('p').text('IF-IRF Threshold: ');
@@ -127,13 +127,15 @@ d3.json("node-link-value.json", function(error, graph) {
   	.style('display', 'block')
   	.on('input', function () {
   		var threshold = this.value;
+      var threshold2 = +d3.select('label2').text();
+      // console.log(threshold2)
 
   		d3.select('label').text(threshold);
 
   		// Find the links that are at or above the threshold.
   		var newData = [];
   		graph.links.forEach( function (d) {
-  			if (ifrifSize(d.log10_ifirf) >= threshold) {newData.push(d); };
+  			if (ifrifSize(d.loge_ifirf) >= threshold & d.edge_count >= threshold2) {newData.push(d); };
   		});
 
   		// Data join with only those new links.
@@ -170,13 +172,14 @@ d3.json("node-link-value.json", function(error, graph) {
     	.style('display', 'block')
     	.on('input', function () {
     		var threshold = this.value;
+        var threshold2 = +d3.select('label').text();
 
     		d3.select('label2').text(threshold);
 
     		// Find the links that are at or above the threshold.
     		var newData = [];
     		graph.links.forEach( function (d) {
-    			if (d.edge_count >= threshold) {newData.push(d); };
+    			if (d.edge_count >= threshold & ifrifSize(d.loge_ifirf) >= threshold2) {newData.push(d); };
     		});
 
     		// Data join with only those new links.

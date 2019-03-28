@@ -1,5 +1,5 @@
 body {
-  background-color: rgb(129, 129, 129);
+  background-color: rgb(73, 73, 73);
   padding: 0px;
   margin: 0px;
   border: 0px;
@@ -9,15 +9,21 @@ body {
 .main_svg {
   width: 100vw;
   height: 40vw;
-  background-color: rgb(129, 129, 129);
+  background-color: rgb(73, 73, 73);
   padding: 0px;
   margin: 0px;
   border: 0px;
   outline: none;
 }
 
+p {
+  color: rgb(218, 218, 218);
+  margin-left: 20px;
+}
+
 form {
   width: 200px !important;
+  margin-left: 20px;
 }
 
 .node {
