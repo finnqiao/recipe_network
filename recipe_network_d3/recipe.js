@@ -59,10 +59,14 @@ d3.json("node-link-value.json", function(error, graph) {
     .attr("class", "nodes")
     .selectAll("circle")
     .data(graph.nodes)
-    .enter().append("svg:circle")
-    .attr('r', function(d) { return degreeSize(d.recipes); })
-    .attr("fill", 'rgb(46, 134, 255)')
-    // .attr('fill', )
+    .enter().append("svg:image")
+    .attr('width', d => degreeSize(d.recipes))
+    .attr('height', d => degreeSize(d.recipes))
+    // .attr('xlink:href', "./svg-icons/garlic.svg")
+    .attr('xlink:href', d => "./svg-icons/" + d['svg_link'])
+    // .enter().append("svg:circle")
+    // .attr('r', function(d) { return degreeSize(d.recipes); })
+    // .attr("fill", 'rgb(46, 134, 255)')
     .attr('class', 'node')
     // On click, toggle networks for the selected node.
     .on('click', function(d, i) {
@@ -89,12 +93,12 @@ d3.json("node-link-value.json", function(error, graph) {
         .on("drag", dragged)
         .on("end", dragended))
 
-  var images = node.append("svg:image")
-    .attr("xlink:href", "./svg-icons/garlic.svg")
-    .attr("x", function(d) { return -25;})
-    .attr("y", function(d) { return -25;})
-    .attr("height", 50)
-    .attr("width", 50);
+  // var images = node.append("svg:image")
+  //   .attr("xlink:href", "./svg-icons/garlic.svg")
+  //   .attr("x", function(d) { return -25;})
+  //   .attr("y", function(d) { return -25;})
+  //   .attr("height", 50)
+  //   .attr("width", 50);
 
   // node.append("title")
   //   .text(function(d) { return d.ingred_name; });
@@ -110,8 +114,8 @@ d3.json("node-link-value.json", function(error, graph) {
   var texts=container.selectAll(".texts")
     .data(graph.nodes)
     .enter().append("text")
-    .attr("dx", 20)
-    .attr("dy", ".35em")
+    // .attr("dx", 20)
+    // .attr("dy", ".35em")
     .text(function(d) { return d.ingred_name; })
 
   simulation
@@ -137,9 +141,12 @@ d3.json("node-link-value.json", function(error, graph) {
         .attr("x2", function(d) { return d.target.x; })
         .attr("y2", function(d) { return d.target.y; });
 
+    // node
+    //     .attr("cx", function(d) { return d.x; })
+    //     .attr("cy", function(d) { return d.y; });
     node
-        .attr("cx", function(d) { return d.x; })
-        .attr("cy", function(d) { return d.y; });
+      .attr('x', d => d.x)
+      .attr('y', d => d.y)
 
     // d3.selectAll("rect").attr("x", function (d) {
     //     return d.x;
@@ -157,8 +164,6 @@ d3.json("node-link-value.json", function(error, graph) {
   }
 
   // Slider for link strength filter
-
-
 
   var slider = d3.select('body').append('p').text('IF-IRF Threshold: ');
 
@@ -297,8 +302,6 @@ function dragended(d) {
 function zoomed() {
   container.attr("transform", "translate(" + d3.event.transform.x + ", " + d3.event.transform.y + ") scale(" + d3.event.transform.k + ")");
 }
-
-
 
 // Search for nodes by making all unmatched nodes temporarily transparent.
 function searchNodes() {

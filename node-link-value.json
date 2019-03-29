@@ -4,983 +4,1179 @@
   "graph": {},
   "nodes": [
     {
-      "recipes": 36975,
       "ingred_name": "butter",
+      "recipes": 36975,
+      "svg_link": "butter.svg",
       "id": "butter"
     },
     {
-      "recipes": 32539,
       "ingred_name": "garlic",
+      "recipes": 32539,
+      "svg_link": "garlic.svg",
       "id": "garlic"
     },
     {
-      "recipes": 31492,
       "ingred_name": "sugar",
+      "recipes": 31492,
+      "svg_link": "sugar.svg",
       "id": "sugar"
     },
     {
-      "recipes": 32429,
       "ingred_name": "olive oil",
+      "recipes": 32429,
+      "svg_link": "olive_oil.svg",
       "id": "olive oil"
     },
     {
-      "recipes": 24435,
       "ingred_name": "egg",
+      "recipes": 24435,
+      "svg_link": "egg.svg",
       "id": "egg"
     },
     {
-      "recipes": 21384,
       "ingred_name": "all-purpose flour",
+      "recipes": 21384,
+      "svg_link": "flour.svg",
       "id": "all-purpose flour"
     },
     {
-      "recipes": 20845,
       "ingred_name": "onion",
+      "recipes": 20845,
+      "svg_link": "onion.svg",
       "id": "onion"
     },
     {
-      "recipes": 11957,
       "ingred_name": "vanilla extract",
+      "recipes": 11957,
+      "svg_link": "shopping_basket.svg",
       "id": "vanilla extract"
     },
     {
-      "recipes": 12645,
       "ingred_name": "vegetable oil",
+      "recipes": 12645,
+      "svg_link": "vegetable_oil.svg",
       "id": "vegetable oil"
     },
     {
-      "recipes": 12743,
       "ingred_name": "lemon juice",
+      "recipes": 12743,
+      "svg_link": "lemon_juice.svg",
       "id": "lemon juice"
     },
     {
-      "recipes": 11073,
       "ingred_name": "brown sugar",
+      "recipes": 11073,
+      "svg_link": "shopping_basket.svg",
       "id": "brown sugar"
     },
     {
-      "recipes": 9134,
       "ingred_name": "chicken stock",
+      "recipes": 9134,
+      "svg_link": "shopping_basket.svg",
       "id": "chicken stock"
     },
     {
-      "recipes": 9285,
       "ingred_name": "parsley",
+      "recipes": 9285,
+      "svg_link": "shopping_basket.svg",
       "id": "parsley"
     },
     {
-      "recipes": 10361,
       "ingred_name": "milk",
+      "recipes": 10361,
+      "svg_link": "shopping_basket.svg",
       "id": "milk"
     },
     {
-      "recipes": 7153,
       "ingred_name": "cilantro",
+      "recipes": 7153,
+      "svg_link": "shopping_basket.svg",
       "id": "cilantro"
     },
     {
-      "recipes": 7949,
       "ingred_name": "baking powder",
+      "recipes": 7949,
+      "svg_link": "shopping_basket.svg",
       "id": "baking powder"
     },
     {
-      "recipes": 7652,
       "ingred_name": "ground cinnamon",
+      "recipes": 7652,
+      "svg_link": "shopping_basket.svg",
       "id": "ground cinnamon"
     },
     {
-      "recipes": 6529,
       "ingred_name": "carrot",
+      "recipes": 6529,
+      "svg_link": "shopping_basket.svg",
       "id": "carrot"
     },
     {
-      "recipes": 7376,
       "ingred_name": "heavy cream",
+      "recipes": 7376,
+      "svg_link": "shopping_basket.svg",
       "id": "heavy cream"
     },
     {
-      "recipes": 6225,
       "ingred_name": "red onion",
+      "recipes": 6225,
+      "svg_link": "shopping_basket.svg",
       "id": "red onion"
     },
     {
-      "recipes": 6250,
       "ingred_name": "baking soda",
+      "recipes": 6250,
+      "svg_link": "shopping_basket.svg",
       "id": "baking soda"
     },
     {
-      "recipes": 6492,
       "ingred_name": "parmesan",
+      "recipes": 6492,
+      "svg_link": "shopping_basket.svg",
       "id": "parmesan"
     },
     {
-      "recipes": 4656,
       "ingred_name": "bay leaf",
+      "recipes": 4656,
+      "svg_link": "shopping_basket.svg",
       "id": "bay leaf"
     },
     {
-      "recipes": 5210,
       "ingred_name": "shallot",
+      "recipes": 5210,
+      "svg_link": "shopping_basket.svg",
       "id": "shallot"
     },
     {
-      "recipes": 5443,
       "ingred_name": "wine vinegar",
+      "recipes": 5443,
+      "svg_link": "shopping_basket.svg",
       "id": "wine vinegar"
     },
     {
-      "recipes": 4875,
       "ingred_name": "thyme",
+      "recipes": 4875,
+      "svg_link": "shopping_basket.svg",
       "id": "thyme"
     },
     {
-      "recipes": 5787,
       "ingred_name": "honey",
+      "recipes": 5787,
+      "svg_link": "shopping_basket.svg",
       "id": "honey"
     },
     {
-      "recipes": 5608,
       "ingred_name": "lemon",
+      "recipes": 5608,
+      "svg_link": "shopping_basket.svg",
       "id": "lemon"
     },
     {
-      "recipes": 4950,
       "ingred_name": "soy sauce",
+      "recipes": 4950,
+      "svg_link": "shopping_basket.svg",
       "id": "soy sauce"
     },
     {
-      "recipes": 5010,
       "ingred_name": "celery",
+      "recipes": 5010,
+      "svg_link": "shopping_basket.svg",
       "id": "celery"
     },
     {
-      "recipes": 5418,
       "ingred_name": "tomato",
+      "recipes": 5418,
+      "svg_link": "shopping_basket.svg",
       "id": "tomato"
     },
     {
-      "recipes": 3871,
       "ingred_name": "canola oil",
+      "recipes": 3871,
+      "svg_link": "shopping_basket.svg",
       "id": "canola oil"
     },
     {
-      "recipes": 5545,
       "ingred_name": "sour cream",
+      "recipes": 5545,
+      "svg_link": "shopping_basket.svg",
       "id": "sour cream"
     },
     {
-      "recipes": 4944,
       "ingred_name": "white wine",
+      "recipes": 4944,
+      "svg_link": "shopping_basket.svg",
       "id": "white wine"
     },
     {
-      "recipes": 4594,
       "ingred_name": "ground cumin",
+      "recipes": 4594,
+      "svg_link": "shopping_basket.svg",
       "id": "ground cumin"
     },
     {
-      "recipes": 4649,
       "ingred_name": "egg yolk",
+      "recipes": 4649,
+      "svg_link": "shopping_basket.svg",
       "id": "egg yolk"
     },
     {
-      "recipes": 4180,
       "ingred_name": "ginger",
+      "recipes": 4180,
+      "svg_link": "shopping_basket.svg",
       "id": "ginger"
     },
     {
-      "recipes": 4926,
       "ingred_name": "basil",
+      "recipes": 4926,
+      "svg_link": "shopping_basket.svg",
       "id": "basil"
     },
     {
-      "recipes": 4801,
       "ingred_name": "lime juice",
+      "recipes": 4801,
+      "svg_link": "shopping_basket.svg",
       "id": "lime juice"
     },
     {
-      "recipes": 4194,
       "ingred_name": "dijon mustard",
+      "recipes": 4194,
+      "svg_link": "shopping_basket.svg",
       "id": "dijon mustard"
     },
     {
-      "recipes": 4060,
       "ingred_name": "confectioner sugar",
+      "recipes": 4060,
+      "svg_link": "shopping_basket.svg",
       "id": "confectioner sugar"
     },
     {
-      "recipes": 4233,
       "ingred_name": "green onion",
+      "recipes": 4233,
+      "svg_link": "shopping_basket.svg",
       "id": "green onion"
     },
     {
-      "recipes": 3748,
       "ingred_name": "scallion",
+      "recipes": 3748,
+      "svg_link": "shopping_basket.svg",
       "id": "scallion"
     },
     {
-      "recipes": 4432,
       "ingred_name": "mayonnaise",
+      "recipes": 4432,
+      "svg_link": "shopping_basket.svg",
       "id": "mayonnaise"
     },
     {
-      "recipes": 3528,
       "ingred_name": "red bell",
+      "recipes": 3528,
+      "svg_link": "shopping_basket.svg",
       "id": "red bell"
     },
     {
-      "recipes": 3384,
       "ingred_name": "paprika",
+      "recipes": 3384,
+      "svg_link": "shopping_basket.svg",
       "id": "paprika"
     },
     {
-      "recipes": 3439,
       "ingred_name": "cornstarch",
+      "recipes": 3439,
+      "svg_link": "shopping_basket.svg",
       "id": "cornstarch"
     },
     {
-      "recipes": 3420,
       "ingred_name": "worcestershire sauce",
+      "recipes": 3420,
+      "svg_link": "shopping_basket.svg",
       "id": "worcestershire sauce"
     },
     {
-      "recipes": 3460,
       "ingred_name": "whole milk",
+      "recipes": 3460,
+      "svg_link": "shopping_basket.svg",
       "id": "whole milk"
     },
     {
-      "recipes": 4161,
       "ingred_name": "chicken breast",
+      "recipes": 4161,
+      "svg_link": "shopping_basket.svg",
       "id": "chicken breast"
     },
     {
-      "recipes": 3601,
       "ingred_name": "garlic powder",
+      "recipes": 3601,
+      "svg_link": "shopping_basket.svg",
       "id": "garlic powder"
     },
     {
-      "recipes": 3167,
       "ingred_name": "lime",
+      "recipes": 3167,
+      "svg_link": "shopping_basket.svg",
       "id": "lime"
     },
     {
-      "recipes": 3356,
       "ingred_name": "egg white",
+      "recipes": 3356,
+      "svg_link": "shopping_basket.svg",
       "id": "egg white"
     },
     {
-      "recipes": 3629,
       "ingred_name": "lemon zest",
+      "recipes": 3629,
+      "svg_link": "shopping_basket.svg",
       "id": "lemon zest"
     },
     {
-      "recipes": 2840,
       "ingred_name": "chili powder",
+      "recipes": 2840,
+      "svg_link": "shopping_basket.svg",
       "id": "chili powder"
     },
     {
-      "recipes": 3663,
       "ingred_name": "cream cheese",
+      "recipes": 3663,
+      "svg_link": "shopping_basket.svg",
       "id": "cream cheese"
     },
     {
-      "recipes": 2930,
       "ingred_name": "dried oregano",
+      "recipes": 2930,
+      "svg_link": "shopping_basket.svg",
       "id": "dried oregano"
     },
     {
-      "recipes": 2729,
       "ingred_name": "flour",
+      "recipes": 2729,
+      "svg_link": "shopping_basket.svg",
       "id": "flour"
     },
     {
-      "recipes": 3234,
       "ingred_name": "orange juice",
+      "recipes": 3234,
+      "svg_link": "shopping_basket.svg",
       "id": "orange juice"
     },
     {
-      "recipes": 2804,
       "ingred_name": "ground nutmeg",
+      "recipes": 2804,
+      "svg_link": "shopping_basket.svg",
       "id": "ground nutmeg"
     },
     {
-      "recipes": 2988,
       "ingred_name": "bread crumb",
+      "recipes": 2988,
+      "svg_link": "shopping_basket.svg",
       "id": "bread crumb"
     },
     {
-      "recipes": 2338,
       "ingred_name": "tomato paste",
+      "recipes": 2338,
+      "svg_link": "shopping_basket.svg",
       "id": "tomato paste"
     },
     {
-      "recipes": 2731,
       "ingred_name": "cider vinegar",
+      "recipes": 2731,
+      "svg_link": "shopping_basket.svg",
       "id": "cider vinegar"
     },
     {
-      "recipes": 2536,
       "ingred_name": "cocoa powder",
+      "recipes": 2536,
+      "svg_link": "shopping_basket.svg",
       "id": "cocoa powder"
     },
     {
-      "recipes": 2460,
       "ingred_name": "buttermilk",
+      "recipes": 2460,
+      "svg_link": "shopping_basket.svg",
       "id": "buttermilk"
     },
     {
-      "recipes": 2952,
       "ingred_name": "walnut",
+      "recipes": 2952,
+      "svg_link": "shopping_basket.svg",
       "id": "walnut"
     },
     {
-      "recipes": 2312,
       "ingred_name": "sesame oil",
+      "recipes": 2312,
+      "svg_link": "shopping_basket.svg",
       "id": "sesame oil"
     },
     {
-      "recipes": 2800,
       "ingred_name": "balsamic vinegar",
+      "recipes": 2800,
+      "svg_link": "shopping_basket.svg",
       "id": "balsamic vinegar"
     },
     {
-      "recipes": 3051,
       "ingred_name": "mint",
+      "recipes": 3051,
+      "svg_link": "shopping_basket.svg",
       "id": "mint"
     },
     {
-      "recipes": 2638,
       "ingred_name": "ground beef",
+      "recipes": 2638,
+      "svg_link": "shopping_basket.svg",
       "id": "ground beef"
     },
     {
-      "recipes": 2124,
       "ingred_name": "ground ginger",
+      "recipes": 2124,
+      "svg_link": "shopping_basket.svg",
       "id": "ground ginger"
     },
     {
-      "recipes": 2025,
       "ingred_name": "hot sauce",
+      "recipes": 2025,
+      "svg_link": "shopping_basket.svg",
       "id": "hot sauce"
     },
     {
-      "recipes": 3290,
       "ingred_name": "potato",
+      "recipes": 3290,
+      "svg_link": "shopping_basket.svg",
       "id": "potato"
     },
     {
-      "recipes": 2696,
       "ingred_name": "chocolate chip",
+      "recipes": 2696,
+      "svg_link": "shopping_basket.svg",
       "id": "chocolate chip"
     },
     {
-      "recipes": 3096,
       "ingred_name": "cheddar cheese",
+      "recipes": 3096,
+      "svg_link": "shopping_basket.svg",
       "id": "cheddar cheese"
     },
     {
-      "recipes": 1976,
       "ingred_name": "red wine",
+      "recipes": 1976,
+      "svg_link": "shopping_basket.svg",
       "id": "red wine"
     },
     {
-      "recipes": 2424,
       "ingred_name": "cooking spray",
+      "recipes": 2424,
+      "svg_link": "shopping_basket.svg",
       "id": "cooking spray"
     },
     {
-      "recipes": 2236,
       "ingred_name": "pecan",
+      "recipes": 2236,
+      "svg_link": "shopping_basket.svg",
       "id": "pecan"
     },
     {
-      "recipes": 1633,
       "ingred_name": "black peppercorn",
+      "recipes": 1633,
+      "svg_link": "shopping_basket.svg",
       "id": "black peppercorn"
     },
     {
-      "recipes": 1743,
       "ingred_name": "ground clove",
+      "recipes": 1743,
+      "svg_link": "shopping_basket.svg",
       "id": "ground clove"
     },
     {
-      "recipes": 2182,
       "ingred_name": "almond",
+      "recipes": 2182,
+      "svg_link": "shopping_basket.svg",
       "id": "almond"
     },
     {
-      "recipes": 1951,
       "ingred_name": "whipping cream",
+      "recipes": 1951,
+      "svg_link": "shopping_basket.svg",
       "id": "whipping cream"
     },
     {
-      "recipes": 2033,
       "ingred_name": "zucchini",
+      "recipes": 2033,
+      "svg_link": "shopping_basket.svg",
       "id": "zucchini"
     },
     {
-      "recipes": 2806,
       "ingred_name": "bacon",
+      "recipes": 2806,
+      "svg_link": "shopping_basket.svg",
       "id": "bacon"
     },
     {
-      "recipes": 1929,
       "ingred_name": "fresh chive",
+      "recipes": 1929,
+      "svg_link": "shopping_basket.svg",
       "id": "fresh chive"
     },
     {
-      "recipes": 1813,
       "ingred_name": "ketchup",
+      "recipes": 1813,
+      "svg_link": "shopping_basket.svg",
       "id": "ketchup"
     },
     {
-      "recipes": 1793,
       "ingred_name": "fresh rosemary",
+      "recipes": 1793,
+      "svg_link": "shopping_basket.svg",
       "id": "fresh rosemary"
     },
     {
-      "recipes": 1736,
       "ingred_name": "plum tomato",
+      "recipes": 1736,
+      "svg_link": "shopping_basket.svg",
       "id": "plum tomato"
     },
     {
-      "recipes": 1715,
       "ingred_name": "shrimp",
+      "recipes": 1715,
+      "svg_link": "shopping_basket.svg",
       "id": "shrimp"
     },
     {
-      "recipes": 1618,
       "ingred_name": "nutmeg",
+      "recipes": 1618,
+      "svg_link": "shopping_basket.svg",
       "id": "nutmeg"
     },
     {
-      "recipes": 1796,
       "ingred_name": "cream",
+      "recipes": 1796,
+      "svg_link": "shopping_basket.svg",
       "id": "cream"
     },
     {
-      "recipes": 1565,
       "ingred_name": "white onion",
+      "recipes": 1565,
+      "svg_link": "shopping_basket.svg",
       "id": "white onion"
     },
     {
-      "recipes": 1770,
       "ingred_name": "maple syrup",
+      "recipes": 1770,
+      "svg_link": "shopping_basket.svg",
       "id": "maple syrup"
     },
     {
-      "recipes": 1811,
       "ingred_name": "white vinegar",
+      "recipes": 1811,
+      "svg_link": "shopping_basket.svg",
       "id": "white vinegar"
     },
     {
-      "recipes": 1577,
       "ingred_name": "sesame seed",
+      "recipes": 1577,
+      "svg_link": "shopping_basket.svg",
       "id": "sesame seed"
     },
     {
-      "recipes": 1494,
       "ingred_name": "onion powder",
+      "recipes": 1494,
+      "svg_link": "shopping_basket.svg",
       "id": "onion powder"
     },
     {
-      "recipes": 1276,
       "ingred_name": "ground coriander",
+      "recipes": 1276,
+      "svg_link": "shopping_basket.svg",
       "id": "ground coriander"
     },
     {
-      "recipes": 1527,
       "ingred_name": "tomato sauce",
+      "recipes": 1527,
+      "svg_link": "shopping_basket.svg",
       "id": "tomato sauce"
     },
     {
-      "recipes": 1650,
       "ingred_name": "corn syrup",
+      "recipes": 1650,
+      "svg_link": "shopping_basket.svg",
       "id": "corn syrup"
     },
     {
-      "recipes": 1660,
       "ingred_name": "raisin",
+      "recipes": 1660,
+      "svg_link": "shopping_basket.svg",
       "id": "raisin"
     },
     {
-      "recipes": 1187,
       "ingred_name": "jalapeno",
+      "recipes": 1187,
+      "svg_link": "shopping_basket.svg",
       "id": "jalapeno"
     },
     {
-      "recipes": 1507,
       "ingred_name": "cinnamon stick",
+      "recipes": 1507,
+      "svg_link": "shopping_basket.svg",
       "id": "cinnamon stick"
     },
     {
-      "recipes": 1310,
       "ingred_name": "ground allspice",
+      "recipes": 1310,
+      "svg_link": "shopping_basket.svg",
       "id": "ground allspice"
     },
     {
-      "recipes": 1599,
       "ingred_name": "orange",
+      "recipes": 1599,
+      "svg_link": "shopping_basket.svg",
       "id": "orange"
     },
     {
-      "recipes": 1408,
       "ingred_name": "orange zest",
+      "recipes": 1408,
+      "svg_link": "shopping_basket.svg",
       "id": "orange zest"
     },
     {
-      "recipes": 1312,
       "ingred_name": "rice vinegar",
+      "recipes": 1312,
+      "svg_link": "shopping_basket.svg",
       "id": "rice vinegar"
     },
     {
-      "recipes": 1755,
       "ingred_name": "peanut butter",
+      "recipes": 1755,
+      "svg_link": "shopping_basket.svg",
       "id": "peanut butter"
     },
     {
-      "recipes": 1301,
       "ingred_name": "leek",
+      "recipes": 1301,
+      "svg_link": "shopping_basket.svg",
       "id": "leek"
     },
     {
-      "recipes": 1440,
       "ingred_name": "caper",
+      "recipes": 1440,
+      "svg_link": "shopping_basket.svg",
       "id": "caper"
     },
     {
-      "recipes": 1434,
       "ingred_name": "curry powder",
+      "recipes": 1434,
+      "svg_link": "shopping_basket.svg",
       "id": "curry powder"
     },
     {
-      "recipes": 1408,
       "ingred_name": "vanilla bean",
+      "recipes": 1408,
+      "svg_link": "shopping_basket.svg",
       "id": "vanilla bean"
     },
     {
-      "recipes": 1121,
       "ingred_name": "peanut oil",
+      "recipes": 1121,
+      "svg_link": "shopping_basket.svg",
       "id": "peanut oil"
     },
     {
-      "recipes": 1420,
       "ingred_name": "coconut",
+      "recipes": 1420,
+      "svg_link": "shopping_basket.svg",
       "id": "coconut"
     },
     {
-      "recipes": 1280,
       "ingred_name": "black bean",
+      "recipes": 1280,
+      "svg_link": "shopping_basket.svg",
       "id": "black bean"
     },
     {
-      "recipes": 1284,
       "ingred_name": "coconut milk",
+      "recipes": 1284,
+      "svg_link": "shopping_basket.svg",
       "id": "coconut milk"
     },
     {
-      "recipes": 1423,
       "ingred_name": "cherry tomato",
+      "recipes": 1423,
+      "svg_link": "shopping_basket.svg",
       "id": "cherry tomato"
     },
     {
-      "recipes": 1371,
       "ingred_name": "avocado",
+      "recipes": 1371,
+      "svg_link": "shopping_basket.svg",
       "id": "avocado"
     },
     {
-      "recipes": 1218,
       "ingred_name": "cinnamon",
+      "recipes": 1218,
+      "svg_link": "shopping_basket.svg",
       "id": "cinnamon"
     },
     {
-      "recipes": 1759,
       "ingred_name": "ice cream",
+      "recipes": 1759,
+      "svg_link": "shopping_basket.svg",
       "id": "ice cream"
     },
     {
-      "recipes": 950,
       "ingred_name": "fish sauce",
+      "recipes": 950,
+      "svg_link": "shopping_basket.svg",
       "id": "fish sauce"
     },
     {
-      "recipes": 983,
       "ingred_name": "coriander seed",
+      "recipes": 983,
+      "svg_link": "shopping_basket.svg",
       "id": "coriander seed"
     },
     {
-      "recipes": 1232,
       "ingred_name": "vanilla",
+      "recipes": 1232,
+      "svg_link": "shopping_basket.svg",
       "id": "vanilla"
     },
     {
-      "recipes": 1048,
       "ingred_name": "cumin seed",
+      "recipes": 1048,
+      "svg_link": "shopping_basket.svg",
       "id": "cumin seed"
     },
     {
-      "recipes": 1272,
       "ingred_name": "fresh dill",
+      "recipes": 1272,
+      "svg_link": "shopping_basket.svg",
       "id": "fresh dill"
     },
     {
-      "recipes": 1010,
       "ingred_name": "fennel seed",
+      "recipes": 1010,
+      "svg_link": "shopping_basket.svg",
       "id": "fennel seed"
     },
     {
-      "recipes": 1427,
       "ingred_name": "white rice",
+      "recipes": 1427,
+      "svg_link": "shopping_basket.svg",
       "id": "white rice"
     },
     {
-      "recipes": 1254,
       "ingred_name": "mushroom",
+      "recipes": 1254,
+      "svg_link": "shopping_basket.svg",
       "id": "mushroom"
     },
     {
-      "recipes": 1173,
       "ingred_name": "semisweet chocolate",
+      "recipes": 1173,
+      "svg_link": "shopping_basket.svg",
       "id": "semisweet chocolate"
     },
     {
-      "recipes": 1192,
       "ingred_name": "bittersweet chocolate",
+      "recipes": 1192,
+      "svg_link": "shopping_basket.svg",
       "id": "bittersweet chocolate"
     },
     {
-      "recipes": 1220,
       "ingred_name": "pine nut",
+      "recipes": 1220,
+      "svg_link": "shopping_basket.svg",
       "id": "pine nut"
     },
     {
-      "recipes": 874,
       "ingred_name": "juice lime",
+      "recipes": 874,
+      "svg_link": "shopping_basket.svg",
       "id": "juice lime"
     },
     {
-      "recipes": 1104,
       "ingred_name": "dried basil",
+      "recipes": 1104,
+      "svg_link": "shopping_basket.svg",
       "id": "dried basil"
     },
     {
-      "recipes": 917,
       "ingred_name": "corn tortilla",
+      "recipes": 917,
+      "svg_link": "shopping_basket.svg",
       "id": "corn tortilla"
     },
     {
-      "recipes": 1289,
       "ingred_name": "green bean",
+      "recipes": 1289,
+      "svg_link": "shopping_basket.svg",
       "id": "green bean"
     },
     {
-      "recipes": 907,
       "ingred_name": "molass",
+      "recipes": 907,
+      "svg_link": "shopping_basket.svg",
       "id": "molass"
     },
     {
-      "recipes": 937,
       "ingred_name": "whole clove",
+      "recipes": 937,
+      "svg_link": "shopping_basket.svg",
       "id": "whole clove"
     },
     {
-      "recipes": 672,
       "ingred_name": "chile powder",
+      "recipes": 672,
+      "svg_link": "shopping_basket.svg",
       "id": "chile powder"
     },
     {
-      "recipes": 1128,
       "ingred_name": "cucumber",
+      "recipes": 1128,
+      "svg_link": "shopping_basket.svg",
       "id": "cucumber"
     },
     {
-      "recipes": 980,
       "ingred_name": "beef broth",
+      "recipes": 980,
+      "svg_link": "shopping_basket.svg",
       "id": "beef broth"
     },
     {
-      "recipes": 1182,
       "ingred_name": "apple",
+      "recipes": 1182,
+      "svg_link": "shopping_basket.svg",
       "id": "apple"
     },
     {
-      "recipes": 1551,
       "ingred_name": "mozzarella cheese",
+      "recipes": 1551,
+      "svg_link": "shopping_basket.svg",
       "id": "mozzarella cheese"
     },
     {
-      "recipes": 1052,
       "ingred_name": "half-and-half",
+      "recipes": 1052,
+      "svg_link": "shopping_basket.svg",
       "id": "half-and-half"
     },
     {
-      "recipes": 1076,
       "ingred_name": "plain yogurt",
+      "recipes": 1076,
+      "svg_link": "shopping_basket.svg",
       "id": "plain yogurt"
     },
     {
-      "recipes": 985,
       "ingred_name": "ricotta cheese",
+      "recipes": 985,
+      "svg_link": "shopping_basket.svg",
       "id": "ricotta cheese"
     },
     {
-      "recipes": 857,
       "ingred_name": "rom tomato",
+      "recipes": 857,
+      "svg_link": "shopping_basket.svg",
       "id": "rom tomato"
     },
     {
-      "recipes": 1488,
       "ingred_name": "dry yeast",
+      "recipes": 1488,
+      "svg_link": "shopping_basket.svg",
       "id": "dry yeast"
     },
     {
-      "recipes": 1000,
       "ingred_name": "cake flour",
+      "recipes": 1000,
+      "svg_link": "shopping_basket.svg",
       "id": "cake flour"
     },
     {
-      "recipes": 898,
       "ingred_name": "tomato juice",
+      "recipes": 898,
+      "svg_link": "shopping_basket.svg",
       "id": "tomato juice"
     },
     {
-      "recipes": 1231,
       "ingred_name": "banana",
+      "recipes": 1231,
+      "svg_link": "shopping_basket.svg",
       "id": "banana"
     },
     {
-      "recipes": 740,
       "ingred_name": "mustard seed",
+      "recipes": 740,
+      "svg_link": "shopping_basket.svg",
       "id": "mustard seed"
     },
     {
-      "recipes": 1424,
       "ingred_name": "sweet potato",
+      "recipes": 1424,
+      "svg_link": "shopping_basket.svg",
       "id": "sweet potato"
     },
     {
-      "recipes": 1079,
       "ingred_name": "chive",
+      "recipes": 1079,
+      "svg_link": "shopping_basket.svg",
       "id": "chive"
     },
     {
-      "recipes": 1064,
       "ingred_name": "almond extract",
+      "recipes": 1064,
+      "svg_link": "shopping_basket.svg",
       "id": "almond extract"
     },
     {
-      "recipes": 1156,
       "ingred_name": "shortening",
+      "recipes": 1156,
+      "svg_link": "shopping_basket.svg",
       "id": "shortening"
     },
     {
-      "recipes": 1130,
       "ingred_name": "goat cheese",
+      "recipes": 1130,
+      "svg_link": "shopping_basket.svg",
       "id": "goat cheese"
     },
     {
-      "recipes": 1094,
       "ingred_name": "feta cheese",
+      "recipes": 1094,
+      "svg_link": "shopping_basket.svg",
       "id": "feta cheese"
     },
     {
-      "recipes": 1121,
       "ingred_name": "black olive",
+      "recipes": 1121,
+      "svg_link": "shopping_basket.svg",
       "id": "black olive"
     },
     {
-      "recipes": 720,
       "ingred_name": "ground pork",
+      "recipes": 720,
+      "svg_link": "shopping_basket.svg",
       "id": "ground pork"
     },
     {
-      "recipes": 939,
       "ingred_name": "jack cheese",
+      "recipes": 939,
+      "svg_link": "shopping_basket.svg",
       "id": "jack cheese"
     },
     {
-      "recipes": 842,
       "ingred_name": "italian parsley",
+      "recipes": 842,
+      "svg_link": "shopping_basket.svg",
       "id": "italian parsley"
     },
     {
-      "recipes": 738,
       "ingred_name": "food coloring",
+      "recipes": 738,
+      "svg_link": "shopping_basket.svg",
       "id": "food coloring"
     },
     {
-      "recipes": 644,
       "ingred_name": "spanish onion",
+      "recipes": 644,
+      "svg_link": "shopping_basket.svg",
       "id": "spanish onion"
     },
     {
-      "recipes": 734,
       "ingred_name": "italian sausage",
+      "recipes": 734,
+      "svg_link": "shopping_basket.svg",
       "id": "italian sausage"
     },
     {
-      "recipes": 759,
       "ingred_name": "eggplant",
+      "recipes": 759,
+      "svg_link": "shopping_basket.svg",
       "id": "eggplant"
     },
     {
-      "recipes": 960,
       "ingred_name": "flour tortilla",
+      "recipes": 960,
+      "svg_link": "shopping_basket.svg",
       "id": "flour tortilla"
     },
     {
-      "recipes": 862,
       "ingred_name": "fresh oregano",
+      "recipes": 862,
+      "svg_link": "shopping_basket.svg",
       "id": "fresh oregano"
     },
     {
-      "recipes": 809,
       "ingred_name": "chicken",
+      "recipes": 809,
+      "svg_link": "shopping_basket.svg",
       "id": "chicken"
     },
     {
-      "recipes": 828,
       "ingred_name": "cayenne",
+      "recipes": 828,
+      "svg_link": "shopping_basket.svg",
       "id": "cayenne"
     },
     {
-      "recipes": 891,
       "ingred_name": "gold potato",
+      "recipes": 891,
+      "svg_link": "shopping_basket.svg",
       "id": "gold potato"
     },
     {
-      "recipes": 882,
       "ingred_name": "dry mustard",
+      "recipes": 882,
+      "svg_link": "shopping_basket.svg",
       "id": "dry mustard"
     },
     {
-      "recipes": 948,
       "ingred_name": "smith apple",
+      "recipes": 948,
+      "svg_link": "shopping_basket.svg",
       "id": "smith apple"
     },
     {
-      "recipes": 876,
       "ingred_name": "cream tartar",
+      "recipes": 876,
+      "svg_link": "shopping_basket.svg",
       "id": "cream tartar"
     },
     {
-      "recipes": 736,
       "ingred_name": "shiitake mushroom",
+      "recipes": 736,
+      "svg_link": "shopping_basket.svg",
       "id": "shiitake mushroom"
     },
     {
-      "recipes": 643,
       "ingred_name": "parmigiano-reggiano",
+      "recipes": 643,
+      "svg_link": "shopping_basket.svg",
       "id": "parmigiano-reggiano"
     },
     {
-      "recipes": 883,
       "ingred_name": "sweet onion",
+      "recipes": 883,
+      "svg_link": "shopping_basket.svg",
       "id": "sweet onion"
     },
     {
-      "recipes": 618,
       "ingred_name": "peanut",
+      "recipes": 618,
+      "svg_link": "shopping_basket.svg",
       "id": "peanut"
     },
     {
-      "recipes": 925,
       "ingred_name": "margarine",
+      "recipes": 925,
+      "svg_link": "shopping_basket.svg",
       "id": "margarine"
     },
     {
-      "recipes": 825,
       "ingred_name": "cake mix",
+      "recipes": 825,
+      "svg_link": "shopping_basket.svg",
       "id": "cake mix"
     },
     {
-      "recipes": 763,
       "ingred_name": "fennel bulb",
+      "recipes": 763,
+      "svg_link": "shopping_basket.svg",
       "id": "fennel bulb"
     },
     {
-      "recipes": 758,
       "ingred_name": "wheat flour",
+      "recipes": 758,
+      "svg_link": "shopping_basket.svg",
       "id": "wheat flour"
     },
     {
-      "recipes": 585,
       "ingred_name": "grapeseed oil",
+      "recipes": 585,
+      "svg_link": "shopping_basket.svg",
       "id": "grapeseed oil"
     },
     {
-      "recipes": 1503,
       "ingred_name": "ice cube",
+      "recipes": 1503,
+      "svg_link": "shopping_basket.svg",
       "id": "ice cube"
     },
     {
-      "recipes": 812,
       "ingred_name": "golden raisin",
+      "recipes": 812,
+      "svg_link": "shopping_basket.svg",
       "id": "golden raisin"
     },
     {
-      "recipes": 699,
       "ingred_name": "butternut squash",
+      "recipes": 699,
+      "svg_link": "shopping_basket.svg",
       "id": "butternut squash"
     },
     {
-      "recipes": 695,
       "ingred_name": "frozen pea",
+      "recipes": 695,
+      "svg_link": "shopping_basket.svg",
       "id": "frozen pea"
     },
     {
-      "recipes": 885,
       "ingred_name": "oil frying",
+      "recipes": 885,
+      "svg_link": "shopping_basket.svg",
       "id": "oil frying"
     },
     {
-      "recipes": 820,
       "ingred_name": "dark rum",
+      "recipes": 820,
+      "svg_link": "shopping_basket.svg",
       "id": "dark rum"
     },
     {
-      "recipes": 791,
       "ingred_name": "dried cranberry",
+      "recipes": 791,
+      "svg_link": "shopping_basket.svg",
       "id": "dried cranberry"
     },
     {
-      "recipes": 883,
       "ingred_name": "oat",
+      "recipes": 883,
+      "svg_link": "shopping_basket.svg",
       "id": "oat"
     },
     {
-      "recipes": 770,
       "ingred_name": "blue cheese",
+      "recipes": 770,
+      "svg_link": "shopping_basket.svg",
       "id": "blue cheese"
     },
     {
-      "recipes": 823,
       "ingred_name": "salmon fillet",
+      "recipes": 823,
+      "svg_link": "shopping_basket.svg",
       "id": "salmon fillet"
     },
     {
-      "recipes": 819,
       "ingred_name": "corn kernel",
+      "recipes": 819,
+      "svg_link": "shopping_basket.svg",
       "id": "corn kernel"
     },
     {
-      "recipes": 674,
       "ingred_name": "fresh tarragon",
+      "recipes": 674,
+      "svg_link": "shopping_basket.svg",
       "id": "fresh tarragon"
     },
     {
-      "recipes": 753,
       "ingred_name": "cornmeal",
+      "recipes": 753,
+      "svg_link": "shopping_basket.svg",
       "id": "cornmeal"
     },
     {
-      "recipes": 933,
       "ingred_name": "fresh mushroom",
+      "recipes": 933,
+      "svg_link": "shopping_basket.svg",
       "id": "fresh mushroom"
     },
     {
-      "recipes": 576,
       "ingred_name": "oil spray",
+      "recipes": 576,
+      "svg_link": "shopping_basket.svg",
       "id": "oil spray"
     }
   ],
