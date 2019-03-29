@@ -135,6 +135,7 @@ d3.json("node-link-value.json", function(error, graph) {
   // Header for filters
 
   d3.select('body').append('p').text('Adjust Edge Weight Filters').attr('class','filter_title')
+  d3.select('body').append('p').text('*Warning* Low threshold values can lead to too many edges and performance issues!').attr('class','filter_warning')
 
   // Slider for link strength filter
 

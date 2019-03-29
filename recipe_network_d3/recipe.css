@@ -26,8 +26,17 @@ p {
 .filter_title {
   color: #d2dae2;
   margin-left: 20px;
-  margin-top: 20px;
+  margin-top: 10px;
   font-size: 20px;
+  margin-bottom: 0px;
+}
+
+.filter_warning {
+  color: #f53b57;
+  margin-left: 20px;
+  font-size: 12px;
+  margin-top: 5px;
+  margin-bottom: 5px;
 }
 
 form {
