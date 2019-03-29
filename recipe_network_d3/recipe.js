@@ -80,10 +80,25 @@ d3.json("node-link-value.json", function(error, graph) {
       .call(d3.drag()
           .on("start", dragstarted)
           .on("drag", dragged)
-          .on("end", dragended));
+          .on("end", dragended))
 
-  node.append("title")
-      .text(function(d) { return d.ingred_name; });
+  // node.append("title")
+  //   .text(function(d) { return d.ingred_name; });
+
+  // var rects=container.selectAll(".rects")
+  //   .data(graph.nodes)
+  //   .enter().append("rect")
+  //   .attr("dx", 10)
+  //   .attr("dy", ".35em")
+  //   .attr("width", 100)
+  //   .attr("height", 30);
+
+  var texts=container.selectAll(".texts")
+    .data(graph.nodes)
+    .enter().append("text")
+    .attr("dx", 20)
+    .attr("dy", ".35em")
+    .text(function(d) { return d.ingred_name; })
 
   simulation
       .nodes(graph.nodes)
@@ -102,6 +117,20 @@ d3.json("node-link-value.json", function(error, graph) {
     node
         .attr("cx", function(d) { return d.x; })
         .attr("cy", function(d) { return d.y; });
+
+    // d3.selectAll("rect").attr("x", function (d) {
+    //     return d.x;
+    // })
+    //     .attr("y", function (d) {
+    //     return d.y;
+    // });
+
+    d3.selectAll("text").attr("x", function (d) {
+        return d.x;
+    })
+        .attr("y", function (d) {
+        return d.y;
+    });
   }
 
   // Slider for link strength filter

@@ -4,6 +4,7 @@ body {
   margin: 0px;
   border: 0px;
   outline: none;
+  font-family: 'Montserrat', sans-serif;
 }
 
 .main_svg {
@@ -42,10 +43,20 @@ form {
   background-color: grey;
   width: 200px !important;
   opacity: 0.6;
-  font-style: Montserrat;
+  font-family: 'Montserrat', sans-serif;
 }
 
 .ui-menu-item {
   padding-top:5px;
   padding-bottom:5px;
+}
+
+text {
+  /* stroke: white; */
+  font-size: 14px;
+  font-family: 'Montserrat', sans-serif;
+  /* color: #1abb9c !important;  */
+  fill: #3498db !important;
+  border-radius: 3px;
+  opacity: 1 !important;
 }
