@@ -43,44 +43,52 @@ d3.json("node-link-value.json", function(error, graph) {
   simulation.force("collide", d3.forceCollide().radius(function (d) { return degreeSize(d.recipes); }));
 
   var link = container.append("g")
-      .attr("class", "links")
+    .attr("class", "links")
     .selectAll("line")
     .data(graph.links, function(d) { return d.source + ", " + d.target;})
     .enter().append("line")
       .attr('class', 'link');
 
   var node = container.append("g")
-      .attr("class", "nodes")
+    .attr("class", "nodes")
     .selectAll("circle")
     .data(graph.nodes)
-    .enter().append("circle")
+    .enter().append("svg:circle")
     .attr('r', function(d) { return degreeSize(d.recipes); })
-      .attr("fill", 'rgb(46, 134, 255)')
-      .attr('class', 'node')
-      // On click, toggle networks for the selected node.
-      .on('click', function(d, i) {
-        if (toggle == 0) {
-  	      // Ternary operator restyles links and nodes if they are adjacent.
-  	      d3.selectAll('.link').style('stroke-opacity', function (l) {
-  		      return l.target == d || l.source == d ? 0.5 : 0.01;
-  	      });
-  	      d3.selectAll('.node').style('opacity', function (n) {
-  		      return neighboring(d, n) ? 0.5 : 0.1;
-  	      });
-  	      d3.select(this).style('opacity', 1);
-  	      toggle = 1;
-        }
-        else {
-  	      // Restore nodes and links to normal opacity.
-  	      d3.selectAll('.link').style('stroke-opacity', '0.1');
-  	      d3.selectAll('.node').style('opacity', '1');
-  	      toggle = 0;
-        }
-      })
-      .call(d3.drag()
-          .on("start", dragstarted)
-          .on("drag", dragged)
-          .on("end", dragended))
+    .attr("fill", 'rgb(46, 134, 255)')
+    // .attr('fill', )
+    .attr('class', 'node')
+    // On click, toggle networks for the selected node.
+    .on('click', function(d, i) {
+      if (toggle == 0) {
+	      // Ternary operator restyles links and nodes if they are adjacent.
+	      d3.selectAll('.link').style('stroke-opacity', function (l) {
+		      return l.target == d || l.source == d ? 0.5 : 0.01;
+	      });
+	      d3.selectAll('.node').style('opacity', function (n) {
+		      return neighboring(d, n) ? 0.5 : 0.1;
+	      });
+	      d3.select(this).style('opacity', 1);
+	      toggle = 1;
+      }
+      else {
+	      // Restore nodes and links to normal opacity.
+	      d3.selectAll('.link').style('stroke-opacity', '0.1');
+	      d3.selectAll('.node').style('opacity', '1');
+	      toggle = 0;
+      }
+    })
+    .call(d3.drag()
+        .on("start", dragstarted)
+        .on("drag", dragged)
+        .on("end", dragended))
+
+  var images = node.append("svg:image")
+    .attr("xlink:href", "./svg-icons/garlic.svg")
+    .attr("x", function(d) { return -25;})
+    .attr("y", function(d) { return -25;})
+    .attr("height", 50)
+    .attr("width", 50);
 
   // node.append("title")
   //   .text(function(d) { return d.ingred_name; });
