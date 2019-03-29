@@ -1,12 +1,10 @@
 var height = $(window).height();
 var width = $(window).width();
 
-var svg = d3.select("svg");
+var svg = d3.select(".main_svg");
 
 // Call zoom for svg container.
 svg.call(d3.zoom().on('zoom', zoomed));
-
-// var color = d3.scaleOrdinal(d3.schemeCategory20);
 
 var simulation = d3.forceSimulation()
     // .force("link", d3.forceLink())//Or to use names rather than indices: .id(function(d) { return d.id; }))
@@ -62,7 +60,6 @@ d3.json("node-link-value.json", function(error, graph) {
     .enter().append("svg:image")
     .attr('width', d => degreeSize(d.recipes))
     .attr('height', d => degreeSize(d.recipes))
-    // .attr('xlink:href', "./svg-icons/garlic.svg")
     .attr('xlink:href', d => "./svg-icons/" + d['svg_link'])
     // .enter().append("svg:circle")
     // .attr('r', function(d) { return degreeSize(d.recipes); })
@@ -92,24 +89,6 @@ d3.json("node-link-value.json", function(error, graph) {
         .on("start", dragstarted)
         .on("drag", dragged)
         .on("end", dragended))
-
-  // var images = node.append("svg:image")
-  //   .attr("xlink:href", "./svg-icons/garlic.svg")
-  //   .attr("x", function(d) { return -25;})
-  //   .attr("y", function(d) { return -25;})
-  //   .attr("height", 50)
-  //   .attr("width", 50);
-
-  // node.append("title")
-  //   .text(function(d) { return d.ingred_name; });
-
-  // var rects=container.selectAll(".rects")
-  //   .data(graph.nodes)
-  //   .enter().append("rect")
-  //   .attr("dx", 10)
-  //   .attr("dy", ".35em")
-  //   .attr("width", 100)
-  //   .attr("height", 30);
 
   var texts=container.selectAll(".texts")
     .data(graph.nodes)
@@ -141,19 +120,9 @@ d3.json("node-link-value.json", function(error, graph) {
         .attr("x2", function(d) { return d.target.x; })
         .attr("y2", function(d) { return d.target.y; });
 
-    // node
-    //     .attr("cx", function(d) { return d.x; })
-    //     .attr("cy", function(d) { return d.y; });
     node
       .attr('x', d => d.x)
       .attr('y', d => d.y)
-
-    // d3.selectAll("rect").attr("x", function (d) {
-    //     return d.x;
-    // })
-    //     .attr("y", function (d) {
-    //     return d.y;
-    // });
 
     d3.selectAll("text").attr("x", function (d) {
         return d.x;
@@ -163,9 +132,13 @@ d3.json("node-link-value.json", function(error, graph) {
     });
   }
 
+  // Header for filters
+
+  d3.select('body').append('p').text('Adjust Edge Weight Filters').attr('class','filter_title')
+
   // Slider for link strength filter
 
-  var slider = d3.select('body').append('p').text('IF-IRF Threshold: ');
+  var slider = d3.select('body').append('p').text('Ingredient Frequency - Inverse Recipe Frequency (IF-IRF) Threshold: ');
 
   slider.append('label')
   	.attr('for', 'threshold')
@@ -209,7 +182,7 @@ d3.json("node-link-value.json", function(error, graph) {
   	});
 
     // A slider (using only d3 and HTML5) that removes nodes below the input threshold.
-    var slider = d3.select('body').append('p').text('Edge Weight Threshold: ');
+    var slider = d3.select('body').append('p').text('Number of Recipes with Ingredient Pair Threshold: ');
 
     slider.append('label2')
     	.attr('for', 'threshold')
