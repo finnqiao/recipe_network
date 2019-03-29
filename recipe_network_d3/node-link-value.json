@@ -48,7 +48,7 @@
     {
       "ingred_name": "vanilla extract",
       "recipes": 11957,
-      "svg_link": "shopping_basket.svg",
+      "svg_link": "vanilla.svg",
       "id": "vanilla extract"
     },
     {
@@ -66,211 +66,211 @@
     {
       "ingred_name": "brown sugar",
       "recipes": 11073,
-      "svg_link": "shopping_basket.svg",
+      "svg_link": "brown_sugar.svg",
       "id": "brown sugar"
     },
     {
       "ingred_name": "chicken stock",
       "recipes": 9134,
-      "svg_link": "shopping_basket.svg",
+      "svg_link": "soup.svg",
       "id": "chicken stock"
     },
     {
       "ingred_name": "parsley",
       "recipes": 9285,
-      "svg_link": "shopping_basket.svg",
+      "svg_link": "parsley.svg",
       "id": "parsley"
     },
     {
       "ingred_name": "milk",
       "recipes": 10361,
-      "svg_link": "shopping_basket.svg",
+      "svg_link": "milk.svg",
       "id": "milk"
     },
     {
       "ingred_name": "cilantro",
       "recipes": 7153,
-      "svg_link": "shopping_basket.svg",
+      "svg_link": "cilantro.svg",
       "id": "cilantro"
     },
     {
       "ingred_name": "baking powder",
       "recipes": 7949,
-      "svg_link": "shopping_basket.svg",
+      "svg_link": "baking_powder.svg",
       "id": "baking powder"
     },
     {
       "ingred_name": "ground cinnamon",
       "recipes": 7652,
-      "svg_link": "shopping_basket.svg",
+      "svg_link": "cinnamon.svg",
       "id": "ground cinnamon"
     },
     {
       "ingred_name": "carrot",
       "recipes": 6529,
-      "svg_link": "shopping_basket.svg",
+      "svg_link": "carrot.svg",
       "id": "carrot"
     },
     {
       "ingred_name": "heavy cream",
       "recipes": 7376,
-      "svg_link": "shopping_basket.svg",
+      "svg_link": "milk.svg",
       "id": "heavy cream"
     },
     {
       "ingred_name": "red onion",
       "recipes": 6225,
-      "svg_link": "shopping_basket.svg",
+      "svg_link": "red_onion.svg",
       "id": "red onion"
     },
     {
       "ingred_name": "baking soda",
       "recipes": 6250,
-      "svg_link": "shopping_basket.svg",
+      "svg_link": "baking_soda.svg",
       "id": "baking soda"
     },
     {
       "ingred_name": "parmesan",
       "recipes": 6492,
-      "svg_link": "shopping_basket.svg",
+      "svg_link": "parmesan.svg",
       "id": "parmesan"
     },
     {
       "ingred_name": "bay leaf",
       "recipes": 4656,
-      "svg_link": "shopping_basket.svg",
+      "svg_link": "bay_leaf.svg",
       "id": "bay leaf"
     },
     {
       "ingred_name": "shallot",
       "recipes": 5210,
-      "svg_link": "shopping_basket.svg",
+      "svg_link": "shallot.svg",
       "id": "shallot"
     },
     {
       "ingred_name": "wine vinegar",
       "recipes": 5443,
-      "svg_link": "shopping_basket.svg",
+      "svg_link": "vinegar.svg",
       "id": "wine vinegar"
     },
     {
       "ingred_name": "thyme",
       "recipes": 4875,
-      "svg_link": "shopping_basket.svg",
+      "svg_link": "thyme.svg",
       "id": "thyme"
     },
     {
       "ingred_name": "honey",
       "recipes": 5787,
-      "svg_link": "shopping_basket.svg",
+      "svg_link": "honey.svg",
       "id": "honey"
     },
     {
       "ingred_name": "lemon",
       "recipes": 5608,
-      "svg_link": "shopping_basket.svg",
+      "svg_link": "lemon.svg",
       "id": "lemon"
     },
     {
       "ingred_name": "soy sauce",
       "recipes": 4950,
-      "svg_link": "shopping_basket.svg",
+      "svg_link": "soy_sauce.svg",
       "id": "soy sauce"
     },
     {
       "ingred_name": "celery",
       "recipes": 5010,
-      "svg_link": "shopping_basket.svg",
+      "svg_link": "celery.svg",
       "id": "celery"
     },
     {
       "ingred_name": "tomato",
       "recipes": 5418,
-      "svg_link": "shopping_basket.svg",
+      "svg_link": "tomato.svg",
       "id": "tomato"
     },
     {
       "ingred_name": "canola oil",
       "recipes": 3871,
-      "svg_link": "shopping_basket.svg",
+      "svg_link": "vegetable_oil.svg",
       "id": "canola oil"
     },
     {
       "ingred_name": "sour cream",
       "recipes": 5545,
-      "svg_link": "shopping_basket.svg",
+      "svg_link": "cream.svg",
       "id": "sour cream"
     },
     {
       "ingred_name": "white wine",
       "recipes": 4944,
-      "svg_link": "shopping_basket.svg",
+      "svg_link": "wine.svg",
       "id": "white wine"
     },
     {
       "ingred_name": "ground cumin",
       "recipes": 4594,
-      "svg_link": "shopping_basket.svg",
+      "svg_link": "cumin.svg",
       "id": "ground cumin"
     },
     {
       "ingred_name": "egg yolk",
       "recipes": 4649,
-      "svg_link": "shopping_basket.svg",
+      "svg_link": "yolk.svg",
       "id": "egg yolk"
     },
     {
       "ingred_name": "ginger",
       "recipes": 4180,
-      "svg_link": "shopping_basket.svg",
+      "svg_link": "ginger.svg",
       "id": "ginger"
     },
     {
       "ingred_name": "basil",
       "recipes": 4926,
-      "svg_link": "shopping_basket.svg",
+      "svg_link": "basil.svg",
       "id": "basil"
     },
     {
       "ingred_name": "lime juice",
       "recipes": 4801,
-      "svg_link": "shopping_basket.svg",
+      "svg_link": "lime_juice.svg",
       "id": "lime juice"
     },
     {
       "ingred_name": "dijon mustard",
       "recipes": 4194,
-      "svg_link": "shopping_basket.svg",
+      "svg_link": "mustard.svg",
       "id": "dijon mustard"
     },
     {
       "ingred_name": "confectioner sugar",
       "recipes": 4060,
-      "svg_link": "shopping_basket.svg",
+      "svg_link": "confectioner.svg",
       "id": "confectioner sugar"
     },
     {
       "ingred_name": "green onion",
       "recipes": 4233,
-      "svg_link": "shopping_basket.svg",
+      "svg_link": "green_onion.svg",
       "id": "green onion"
     },
     {
       "ingred_name": "scallion",
       "recipes": 3748,
-      "svg_link": "shopping_basket.svg",
+      "svg_link": "scallion.svg",
       "id": "scallion"
     },
     {
       "ingred_name": "mayonnaise",
       "recipes": 4432,
-      "svg_link": "shopping_basket.svg",
+      "svg_link": "mayonnaise.svg",
       "id": "mayonnaise"
     },
     {
       "ingred_name": "red bell",
       "recipes": 3528,
-      "svg_link": "shopping_basket.svg",
+      "svg_link": "pepper.svg",
       "id": "red bell"
     },
     {
@@ -294,19 +294,19 @@
     {
       "ingred_name": "whole milk",
       "recipes": 3460,
-      "svg_link": "shopping_basket.svg",
+      "svg_link": "milk.svg",
       "id": "whole milk"
     },
     {
       "ingred_name": "chicken breast",
       "recipes": 4161,
-      "svg_link": "shopping_basket.svg",
+      "svg_link": "chicken.svg",
       "id": "chicken breast"
     },
     {
       "ingred_name": "garlic powder",
       "recipes": 3601,
-      "svg_link": "shopping_basket.svg",
+      "svg_link": "garlic_powder.svg",
       "id": "garlic powder"
     },
     {
@@ -324,7 +324,7 @@
     {
       "ingred_name": "lemon zest",
       "recipes": 3629,
-      "svg_link": "shopping_basket.svg",
+      "svg_link": "lemon_zest.svg",
       "id": "lemon zest"
     },
     {
@@ -336,7 +336,7 @@
     {
       "ingred_name": "cream cheese",
       "recipes": 3663,
-      "svg_link": "shopping_basket.svg",
+      "svg_link": "cream_cheese.svg",
       "id": "cream cheese"
     },
     {
