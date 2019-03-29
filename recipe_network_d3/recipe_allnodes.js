@@ -39,12 +39,6 @@ d3.json("node-link-value.json", function(error, graph) {
   	.domain([d3.min(graph.nodes, function(d) {return d.recipes;}),d3.max(graph.nodes, function(d) {return d.recipes; })])
   	.range([10,40]);
 
-  // Linear scale for edge IF-RIF strength
-
-  var ifrifSize = d3.scaleLinear()
-    .domain([d3.min(graph.links, function(d) {return d.loge_ifirf;}),d3.max(graph.links, function(d) {return d.loge_ifirf; })])
-    .range([1,100]);
-
   // Collision detection based on degree centrality.
   simulation.force("collide", d3.forceCollide().radius(function (d) { return degreeSize(d.recipes); }));
 
@@ -118,17 +112,8 @@ d3.json("node-link-value.json", function(error, graph) {
       .nodes(graph.nodes)
       .on("tick", ticked);
 
-  // Initial filter for performance reasons
-
-  var initialData = [];
-  graph.links.forEach(function (d) {
-    if (ifrifSize(d.loge_ifirf) >= 25 & d.edge_count >= 500) {initialData.push(d); };
-  });
-  console.log(graph.links.length)
-  console.log(initialData.length)
-
   simulation.force("link")
-      .links(initialData);
+      .links(graph.links);
 
   function ticked() {
     link
@@ -158,18 +143,22 @@ d3.json("node-link-value.json", function(error, graph) {
 
   // Slider for link strength filter
 
+  // Linear scale for edge IF-RIF strength
 
+  var ifrifSize = d3.scaleLinear()
+    .domain([d3.min(graph.links, function(d) {return d.loge_ifirf;}),d3.max(graph.links, function(d) {return d.loge_ifirf; })])
+    .range([1,100]);
 
   var slider = d3.select('body').append('p').text('IF-IRF Threshold: ');
 
   slider.append('label')
   	.attr('for', 'threshold')
-  	.text('25');
+  	.text('1');
   slider.append('input')
   	.attr('type', 'range')
   	.attr('min', 1)
   	.attr('max', 100)
-  	.attr('value', 25)
+  	.attr('value', 1)
   	.attr('id', 'threshold')
   	.style('width', '50%')
   	.style('display', 'block')
@@ -208,14 +197,13 @@ d3.json("node-link-value.json", function(error, graph) {
 
     slider.append('label2')
     	.attr('for', 'threshold')
-    	.text('500');
+    	.text('1');
     slider.append('input')
     	.attr('type', 'range')
     	.attr('min', d3.min(graph.links, function(d) {return d.edge_count; }))
       // maybe need to rescale/remove the halving
     	.attr('max', d3.max(graph.links, function(d) {return d.edge_count; }) / 2)
-    	// .attr('value', d3.min(graph.links, function(d) {return d.edge_count; }))
-      .attr('value',500)
+    	.attr('value', d3.min(graph.links, function(d) {return d.edge_count; }))
     	.attr('id', 'threshold')
     	.style('width', '50%')
     	.style('display', 'block')
