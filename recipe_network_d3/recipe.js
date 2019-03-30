@@ -6,8 +6,8 @@ var svg = d3.select(".main_svg");
 // Call zoom for svg container.
 svg.call(d3.zoom().on('zoom', zoomed));
 
+// Create simulation object.
 var simulation = d3.forceSimulation()
-    // .force("link", d3.forceLink())//Or to use names rather than indices: .id(function(d) { return d.id; }))
     .force("link", d3.forceLink().id(function(d) { return d.id;}))
     .force("charge", d3.forceManyBody().strength([-500]).distanceMax([1000]))
     .force("center", d3.forceCenter(width/2, height/2));
@@ -46,6 +46,7 @@ d3.json("node-link-value.json", function(error, graph) {
   // Collision detection based on degree centrality.
   simulation.force("collide", d3.forceCollide().radius(function (d) { return degreeSize(d.recipes); }));
 
+  // Create links
   var link = container.append("g")
     .attr("class", "links")
     .selectAll("line")
@@ -53,6 +54,7 @@ d3.json("node-link-value.json", function(error, graph) {
     .enter().append("line")
       .attr('class', 'link');
 
+  // Create nodes with svg images
   var node = container.append("g")
     .attr("class", "nodes")
     .selectAll("circle")
@@ -90,11 +92,10 @@ d3.json("node-link-value.json", function(error, graph) {
         .on("drag", dragged)
         .on("end", dragended))
 
+  // Create texts and use as center of each node
   var texts=container.selectAll(".texts")
     .data(graph.nodes)
     .enter().append("text")
-    // .attr("dx", 20)
-    // .attr("dy", ".35em")
     .text(function(d) { return d.ingred_name; })
 
   simulation
@@ -102,7 +103,6 @@ d3.json("node-link-value.json", function(error, graph) {
       .on("tick", ticked);
 
   // Initial filter for performance reasons
-
   var initialData = [];
   graph.links.forEach(function (d) {
     if (ifrifSize(d.loge_ifirf) >= 25 & d.edge_count >= 500) {initialData.push(d); };
@@ -133,12 +133,10 @@ d3.json("node-link-value.json", function(error, graph) {
   }
 
   // Header for filters
-
   d3.select('body').append('p').text('Adjust Edge Weight Filters').attr('class','filter_title')
   d3.select('body').append('p').text('*Warning* Low threshold values can lead to too many edges and performance issues!').attr('class','filter_warning')
 
   // Slider for link strength filter
-
   var slider = d3.select('body').append('p').text('Ingredient Frequency - Inverse Recipe Frequency (IF-IRF) Threshold: ');
 
   slider.append('label')
@@ -182,7 +180,7 @@ d3.json("node-link-value.json", function(error, graph) {
 
   	});
 
-    // A slider (using only d3 and HTML5) that removes nodes below the input threshold.
+    // Another slider for ingredient pair counts
     var slider = d3.select('body').append('p').text('Number of Recipes with Ingredient Pair Threshold: ');
 
     slider.append('label2')
